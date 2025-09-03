@@ -1,13 +1,13 @@
 package solid.open_closed.solution;
 
-public class DescontoCupom10 implements RegraDesconto{
+public class DiscountCupom10 implements DiscountRule {
     @Override
-    public boolean aceita(String tipo) {
+    public boolean accept(String tipo) {
         return "CUPOM10".equals(tipo);
     }
 
     @Override
-    public double aplicar(double valor) {
+    public double apply(double valor) {
         return valor * 0.9;
     }
 }

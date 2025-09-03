@@ -8,21 +8,21 @@ import java.io.PrintWriter;
 * Violação de SRP: tudo em uma classe
 * */
 
-public class RelatorioVendas {
+public class SalesReport {
     public void gerar() {
         // 1) Regras de negócio
-        double total = calcularTotal();
+        double total = calculateTotal();
         // 2) Persistência
-        salvarEmDisco("total=" + total);
+        saveAtDisk("total=" + total);
         // 3) Apresentação
         System.out.println("Relatório: total=" + total);
     }
 
-    private double calcularTotal() {
+    private double calculateTotal() {
         /* ... soma itens, impostos ... */ return 123.45;
     }
 
-    private void salvarEmDisco(String conteudo) {
+    private void saveAtDisk(String conteudo) {
         try (PrintWriter pw = new PrintWriter("relatorio.txt")) {
             pw.println(conteudo);
         } catch (Exception e) { //noinspection CallToPrintStackTrace

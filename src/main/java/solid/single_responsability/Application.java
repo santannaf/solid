@@ -1,17 +1,17 @@
 package solid.single_responsability;
 
-import solid.single_responsability.solution.ArquivoWriter;
-import solid.single_responsability.solution.CalculadoraVendas;
-import solid.single_responsability.solution.RelatorioConsole;
+import solid.single_responsability.solution.FileWriter;
+import solid.single_responsability.solution.SalesCalculator;
+import solid.single_responsability.solution.ConsoleReport;
 
 public class Application {
     public static void main(String[] args) {
-        CalculadoraVendas calc = new CalculadoraVendas();
-        ArquivoWriter writer = new ArquivoWriter();
-        RelatorioConsole console = new RelatorioConsole();
+        SalesCalculator calc = new SalesCalculator();
+        FileWriter writer = new FileWriter();
+        ConsoleReport console = new ConsoleReport();
 
-        double total = calc.calcularTotal();
-        writer.salvar("relatorio.txt", "total=" + total);
-        console.imprimir(total);
+        double total = calc.calculateTotal();
+        writer.save("relatorio.txt", "total=" + total);
+        console.print(total);
     }
 }

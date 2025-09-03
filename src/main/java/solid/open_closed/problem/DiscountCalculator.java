@@ -6,8 +6,8 @@ package solid.open_closed.problem;
 * */
 
 // Violação de OCP: precisa editar o método para cada novo tipo
-public class CalculadoraDescontos {
-    public double aplicarDesconto(String tipo, double valor) {
+public class DiscountCalculator {
+    public double applyDiscount(String tipo, double valor) {
         if ("CUPOM10".equals(tipo)) return valor * 0.9;
         else if ("VIP".equals(tipo)) return valor * 0.85;
         else if ("BLACKFRIDAY".equals(tipo)) return valor * 0.7;
