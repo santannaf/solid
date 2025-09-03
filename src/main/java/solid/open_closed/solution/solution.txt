@@ -1,0 +1,1 @@
+Solução: estender, não modificar. Use uma abstração e estratégias plugáveis.

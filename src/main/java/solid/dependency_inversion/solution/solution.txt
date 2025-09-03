@@ -1,0 +1,2 @@
+Solução: alto nível depende de abstração; baixo nível implementa a abstração.
+Injete dependências (sem framework, via construtor).

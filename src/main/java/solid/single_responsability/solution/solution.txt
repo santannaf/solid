@@ -1,0 +1,2 @@
+Solução: Separar responsabilidades (domínio, persistência, apresentação).
+Cada classe tem um único motivo para mudar.

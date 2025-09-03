@@ -1,0 +1,2 @@
+Solução: modelar corretamente as abstrações para que qualquer subtipo preserve o contrato.
+Uma saída é tornar invariantes explícitos e evitar herança inadequada.
