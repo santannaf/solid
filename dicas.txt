@@ -1,0 +1,7 @@
+Dicas rápidas
+
+SRP: um motivo para mudar por classe.
+OCP: adicione comportamento via extensão (novas classes), não mexendo no código provado.
+LSP: subtipos devem preservar o contrato do tipo base.
+ISP: prefira várias interfaces pequenas às interfaces cheias de metodos ou funcoes.
+DIP: alto nível depende de abstrações, não de detalhes.
